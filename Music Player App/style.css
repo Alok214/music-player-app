@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.maindiv{
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    margin: auto;
+    place-items: center;
+}
+.musiccon{
+width: 35rem;
+height: 55rem;
+background-color: red;
+border-radius: 2rem;
+box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.657);
+padding: 3rem;
+text-align: center;
+
+}
+.musiccon #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: black;
+    margin: 2rem 0 0.5 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.897);
+
+}
+.musiccon #artist{
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    color: lightgreen;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    
+}
+.imgcon{
+width: 25rem;
+height: 25rem;
+margin: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.897);
+  object-fit: cover;
+}
+
+.musiccontrol .fas{
+color: black;
+font-size: 2rem;
+cursor: pointer;
+filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.856));
+}
+.musiccontrol{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+}
+.musiccontrol .mainbutton{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.musiccontrol .fas:hover{
+    color: cyan;
+}
+.musiccontrol .fa-play:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.897);
+
+}
+
+.anim{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+@media (max-width:500px){
+    .maindiv{
+        width:400px;
+    }
+}
